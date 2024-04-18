@@ -8,7 +8,7 @@ import cookieParser from 'cookie-parser';
 import path from 'path';
 dotenv.config();
 
-mongoose.connect(process.env.MONGO).then(() => {
+mongoose.connect("mongodb://127.0.0.1:27017/mern-estate").then(() => {
     console.log('Connected to MongoDB!');
   })
   .catch((err) => {
